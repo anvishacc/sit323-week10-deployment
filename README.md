@@ -31,8 +31,7 @@ This project involved creating a simple Node.js application, containerizing it u
        --release-channel=regular \
        --logging=SYSTEM \
        --monitoring=SYSTEM
-     ```
-
+   
 5. **Wrote Kubernetes Deployment and Service Files**
    - `deployment.yaml`: Deployed the container using `gcr.io/[PROJECT_ID]/monitoring-app`.
    - `service.yaml`: Exposed the application to the internet using a LoadBalancer.
@@ -40,8 +39,8 @@ This project involved creating a simple Node.js application, containerizing it u
 6. **Applied Kubernetes Configurations**
    - Deployed the application using the following two commands:
     
-     kubectl apply -f deployment.yaml
-     kubectl apply -f service.yaml
+    kubectl apply -f deployment.yaml
+    kubectl apply -f service.yaml
     
 
 7. **Verified Application Deployment**
